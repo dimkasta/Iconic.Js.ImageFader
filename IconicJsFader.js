@@ -53,8 +53,8 @@ $(function(){
 
     $(".fader, .fader-navigation").on("mouseover", function(){
         lockMovement = true;
-        $(".fader-control-left").css("opacity", 1);
-        $(".fader-control-right").css("opacity", 1);
+        $(".fader-control-left").addClass("active");
+        $(".fader-control-right").removeClass("active");
     });
 
     $(".fader").on("mouseout", function() {
@@ -78,6 +78,7 @@ $(function(){
     $(".fader-control-left").on("click", function(){
         goToPrevious(true);
     });
+
     $(".fader-control-right").on("click", function(){
         goToNext(true);
     });
