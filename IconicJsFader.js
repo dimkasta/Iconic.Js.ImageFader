@@ -53,11 +53,11 @@ $(function(){
 
     $(".fader, .fader-navigation").on("mouseover", function(){
         lockMovement = true;
-        $(".fader-control-left").addClass("active");
-        $(".fader-control-right").removeClass("active");
+        $(".fader-control-left").css("opacity", 1);
+        $(".fader-control-right").css("opacity", 1);
     });
 
-    $(".fader").on("mouseout", function() {
+    $(".fader, .fader-navigation").on("mouseout", function() {
         lockMovement = false;
         $(".fader-control-left").css("opacity", 0);
         $(".fader-control-right").css("opacity", 0);
