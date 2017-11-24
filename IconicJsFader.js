@@ -92,5 +92,7 @@ $(function(){
         $("#fader-preview").modal("show");
     });
 
+    position = 0;
+    show();
     loop();
 });
